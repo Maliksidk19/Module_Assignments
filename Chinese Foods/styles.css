@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@200;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.jumbotron {
+    font-family: 'poppins', sans-serif;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 20%;
+    padding: 30px;
+    top: 17%;
+    height: 40px;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.jumbotron p {
+    color: white;
+    font-size: 15px;
+}
+
+.btn-area {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.jumbotron button {
+    width: 7rem;
+    text-align: center;
+    height: 3vh;
+    border: none;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 799px) {
+    .navbar  {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        background-color: #343a40;
+        display: flex;
+        position: relative;
+    }
+    
+    #logo {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    
+    .logo-name {
+        margin: 10px;
+        margin-left: 0;
+        color: white;
+    }
+    
+    .menu-btn {
+        color: white;
+        margin: 10px;
+        transition: .4s ease-in-out;
+        position: absolute;
+        right: 20px;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.7;
+    }
+
+    .nav {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        background-color: #E9C46A;;
+        display: none;
+        flex-direction: row;
+        padding: 20px;
+        gap: 30px;
+        justify-content: center;
+        transition: .4s ease-in-out;
+    }
+
+    .nav .item a {
+        text-decoration: none;
+        color: white;
+        transition: .2s ease-in-out;
+    }
+
+    .nav .item a:hover {
+        opacity: 0.7;
+    }
+
+    .active {
+        border-bottom: 1px solid white;
+    }
+}
+
+@media (min-width: 800px) {
+    .navbar  {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        background-color: #343a40;
+        display: flex;
+        position: relative;
+    }
+    
+    #logo {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    
+    .logo-name {
+        margin: 10px;
+        margin-left: 0;
+        color: white;
+    }
+    
+    .menu-btn {
+       display: none;
+    }
+
+    .navbar-list {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        right: 80px;
+        top: 20px;
+        font-size: large;
+    }
+
+    .list-item a {
+        text-decoration: none;
+        color: white;
+        transition: .2s ease-in-out;
+    }
+
+    .list-item a:hover {
+        opacity: 0.7;
+    }
+
+    .active-link {
+        border-bottom: 1px solid white;
+    }
+
+    .nav {
+        display: none !important;
+    }
+
+    .jumbotron {
+        display: none;
+    }
+}
